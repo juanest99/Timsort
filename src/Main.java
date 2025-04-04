@@ -14,15 +14,16 @@ public class Main {
         for(int i=0;i<lon;i++){
             lista[i] = rand.nextInt(-100,100);
         }
-        for(int i = 0; i<lon; i++){
+   /*     for(int i = 0; i<lon; i++){
             System.out.print(lista[i]+" ");
         }
 
-        System.out.println(" ordenada");
+        System.out.println(" ordenada");*/
+        
         timSort = new TimSort(lista);
         timSort.Timsort();
         listaord= timSort.returnlista();
-
+        //Aca va lo de la interfaz
         for(int i = 0; i<lon; i++){
             System.out.print(listaord[i]+" ");
         }
